@@ -6,7 +6,22 @@ function webdb_OnError(e, r) {
     alert("An error occurred while using webdb.\nCode: " + r.code + "\nMessage: " + r.message)
 }
 
-async function webdb_Init(cards) {
+async function webdb_Init_ifnotexist() {
+    _db = window.openDatabase('indexCards', '1.0', 'indexCards', 65535);
+    await _db.transaction(function (transaction) {
+        let sql = 'CREATE TABLE IF NOT EXISTS Cards ' +
+            '(Id INTEGER NOT NULL PRIMARY KEY, ' +
+            'Front_Head VARCHAR(100), ' +
+            'Front_Body VARCHAR(5000), ' +
+            'Back_Head VARCHAR(100), ' +
+            'Back_Body VARCHAR(5000), ' +
+            'Box INTEGER, ' +
+            'BoxSeq INTEGER)';
+        transaction.executeSql(sql);
+    });
+}
+
+async function webdb_Init_empty() {
     _db = window.openDatabase('indexCards', '1.0', 'indexCards', 65535);
     await _db.transaction(function (transaction) {
         let sql = 'CREATE TABLE Cards ' +
@@ -24,18 +39,36 @@ async function webdb_Init(cards) {
         let sql = 'DELETE FROM Cards';
         transaction.executeSql(sql);
     });
+}
 
+async function webdb_Init(cards) {
+    await webdb_Init_empty();
     for (let c of cards) {
-        await _db.transaction(function (tx) {
-            let insertsql = 'INSERT INTO Cards (Id, Front_Head, Front_Body, Back_Head, Back_Body, Box, BoxSeq) VALUES (?, ?, ?, ?, ?, ?, ?)';
-            tx.executeSql(insertsql,
-                [c.Id, c.Front_Head, c.Front_Body, c.Back_Head, c.Back_Body, c.Box, c.BoxSeq],
-                webdb_OnSuccess,
-                webdb_OnError
-            );
-        });
+        webdb_AddCard(c);
     }
+}
 
+async function webdb_AddCard(card) {
+    await _db.transaction(function (tx) {
+        let insertsql = 'INSERT INTO Cards (Id, Front_Head, Front_Body, Back_Head, Back_Body, Box, BoxSeq) VALUES (?, ?, ?, ?, ?, ?, ?)';
+        tx.executeSql(insertsql,
+            [card.Id, card.Front_Head, card.Front_Body, card.Back_Head, card.Back_Body, card.Box, card.BoxSeq],
+            webdb_OnSuccess,
+            webdb_OnError
+        );
+    });
+}
+
+async function webdb_AddCard_newid(card) {
+    _db.transaction(function (transaction) {
+        var sql = 'SELECT Id FROM Cards ORDER BY Id DESC'
+        transaction.executeSql(sql, undefined,
+            function (tx, results) {
+                card.Id = results.rows.item(0).Id + 1
+                webdb_AddCard(card);
+            },
+            webdb_OnError);
+    });
 }
 
 function webdb_UpdateBoxCount(number, updateCallback) {

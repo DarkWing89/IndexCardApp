@@ -12,6 +12,10 @@ _card.addEventListener('click', function () {
     _card.classList.toggle('is-flipped');
 })
 
+$(document).ready(function(){
+    selectNewCard();
+});
+
 async function click_loadcards() {
     const opts = {
         types: [{

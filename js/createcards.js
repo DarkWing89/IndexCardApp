@@ -1,4 +1,6 @@
-const newCards = []
+$(document).ready(function(){
+    webdb_Init_ifnotexist();
+});
 
 async function savecards(){    
     var fronthead = $('#front_header').val();
@@ -10,24 +12,12 @@ async function savecards(){
         addCard(fronthead, frontbody, backhead, backbody);
     }
 
-    var jsonstring = JSON.stringify(newCards);
-    const opts = {
-        types:[{
-            description: 'Json File',
-            accept: {'application/json': ['.json']}
-        }],
-        excludeAcceptAllOption: true,
-        multiple: false
-    };
-    fileHandle = await window.showSaveFilePicker(opts);
-    let stream = await fileHandle.createWritable()
-    await stream.write(jsonstring);
-    await stream.close();
+    webdb_SaveInFile();
 }
 
 function addCard(fronthead, frontbody, backhead, backbody){
-    var card = new Card(newCards.length+1, fronthead, frontbody, backhead, backbody, 0, 0)
-    newCards.push(card);
+    var card = new Card(0, fronthead, frontbody, backhead, backbody, 0, 0)
+    webdb_AddCard_newid(card)
 }
 
 function nextcard(){

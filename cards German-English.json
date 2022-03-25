@@ -1,0 +1,1082 @@
+[
+    {
+      "Id": 1,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Sturmwarnung",
+      "Back_Head": "English",
+      "Back_Body": "gale warning",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 2,
+      "Front_Head": "Deutsch",
+      "Front_Body": "auf UKW-Kanal 16",
+      "Back_Head": "English",
+      "Back_Body": "on VHF channel 16",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 3,
+      "Front_Head": "Deutsch",
+      "Front_Body": "manövrierunfähig",
+      "Back_Head": "English",
+      "Back_Body": "not under command",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 4,
+      "Front_Head": "Deutsch",
+      "Front_Body": "benötigen sofortige Hilfe",
+      "Back_Head": "English",
+      "Back_Body": "require immediate help",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 5,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Stärke 8",
+      "Back_Head": "English",
+      "Back_Body": "force 8",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 6,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Schifffahrt in diesem Gebiet",
+      "Back_Head": "English",
+      "Back_Body": "shipping in this area",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 7,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Hubschrauber",
+      "Back_Head": "English",
+      "Back_Body": "helicopter",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 8,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Maschinenraum",
+      "Back_Head": "English",
+      "Back_Body": "engine room",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 9,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Brandabwehr",
+      "Back_Head": "English",
+      "Back_Body": "fire fighting",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 10,
+      "Front_Head": "Deutsch",
+      "Front_Body": "braune Segel",
+      "Back_Head": "English",
+      "Back_Body": "brown sails",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 11,
+      "Front_Head": "Deutsch",
+      "Front_Body": "rot angestrichen",
+      "Back_Head": "English",
+      "Back_Body": "red painted",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 12,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Regen",
+      "Back_Head": "English",
+      "Back_Body": "rain",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 13,
+      "Front_Head": "Deutsch",
+      "Front_Body": "raue See",
+      "Back_Head": "English",
+      "Back_Body": "rough sea",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 14,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Segelboot",
+      "Back_Head": "English",
+      "Back_Body": "Sailing boat",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 15,
+      "Front_Head": "Deutsch",
+      "Front_Body": "wird durchgeführt",
+      "Back_Head": "English",
+      "Back_Body": "will be carried out",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 16,
+      "Front_Head": "Deutsch",
+      "Front_Body": "zunehmend auf",
+      "Back_Head": "English",
+      "Back_Body": "increasing to",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 17,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Schifffahrt wird gebeten",
+      "Back_Head": "English",
+      "Back_Body": "shipping is requested",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 18,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Bestimmgshafen Visby",
+      "Back_Head": "English",
+      "Back_Body": "bound for Visby",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 19,
+      "Front_Head": "Deutsch",
+      "Front_Body": "medizinische Hilfe",
+      "Back_Head": "English",
+      "Back_Body": "medical assistance",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 20,
+      "Front_Head": "Deutsch",
+      "Front_Body": "schwer verletzt",
+      "Back_Head": "English",
+      "Back_Body": "seriously injured",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 21,
+      "Front_Head": "Deutsch",
+      "Front_Body": "vom Mast gefallen",
+      "Back_Head": "English",
+      "Back_Body": "fallen off the mast",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 22,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Fischereigeschirr",
+      "Back_Head": "English",
+      "Back_Body": "fishing gear",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 23,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Tiefwasserweg",
+      "Back_Head": "English",
+      "Back_Body": "deep water lane",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 24,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Sprühregen",
+      "Back_Head": "English",
+      "Back_Body": "drizzle",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 25,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Schiffe in dem Gebiet",
+      "Back_Head": "English",
+      "Back_Body": "ships in area",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 26,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Vorhersagegebiet",
+      "Back_Head": "English",
+      "Back_Body": "forecast area",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 27,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Südwest Stärke 6",
+      "Back_Head": "English",
+      "Back_Body": "southwest force 6",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 28,
+      "Front_Head": "Deutsch",
+      "Front_Body": "weder … noch",
+      "Back_Head": "English",
+      "Back_Body": "neither … nor",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 29,
+      "Front_Head": "Deutsch",
+      "Front_Body": "laut/gemäß",
+      "Back_Head": "English",
+      "Back_Body": "according to",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 30,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Schiff",
+      "Back_Head": "English",
+      "Back_Body": "vessel",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 31,
+      "Front_Head": "Deutsch",
+      "Front_Body": "275 Grad",
+      "Back_Head": "English",
+      "Back_Body": "275 degrees",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 32,
+      "Front_Head": "Deutsch",
+      "Front_Body": "verließ",
+      "Back_Head": "English",
+      "Back_Body": "left",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 33,
+      "Front_Head": "Deutsch",
+      "Front_Body": "rasch zunehmend auf",
+      "Back_Head": "English",
+      "Back_Body": "rapidly increasing to",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 34,
+      "Front_Head": "Deutsch",
+      "Front_Body": "am 16. Juli",
+      "Back_Head": "English",
+      "Back_Body": "on July 16th",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 35,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Verkehrstrennungsgebiet",
+      "Back_Head": "English",
+      "Back_Body": "traffic separation scheme",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 36,
+      "Front_Head": "Deutsch",
+      "Front_Body": "um Hilfe zu leisten",
+      "Back_Head": "English",
+      "Back_Body": "for assistance",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 37,
+      "Front_Head": "Deutsch",
+      "Front_Body": "M/S (Maschinenschiff)",
+      "Back_Head": "English",
+      "Back_Body": "M/V (Motor Vessel)",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 38,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Betonnung",
+      "Back_Head": "English",
+      "Back_Body": "buoyage",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 39,
+      "Front_Head": "Deutsch",
+      "Front_Body": "benötigen Schlepperhilfe",
+      "Back_Head": "English",
+      "Back_Body": "require tug assistance",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 40,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Göteborg",
+      "Back_Head": "English",
+      "Back_Body": "Gothenburg",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 41,
+      "Front_Head": "Deutsch",
+      "Front_Body": "in kritischem Zustand",
+      "Back_Head": "English",
+      "Back_Body": "in critical condition",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 42,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Fahrwasser",
+      "Back_Head": "English",
+      "Back_Body": "fairway",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 43,
+      "Front_Head": "Deutsch",
+      "Front_Body": "zeitweise",
+      "Back_Head": "English",
+      "Back_Body": "at times",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 44,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Überlebende",
+      "Back_Head": "English",
+      "Back_Body": "survivors",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 45,
+      "Front_Head": "Deutsch",
+      "Front_Body": "vorsichtig zu navigieren",
+      "Back_Head": "English",
+      "Back_Body": "to navigate carefully",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 46,
+      "Front_Head": "Deutsch",
+      "Front_Body": "weiße Segel",
+      "Back_Head": "English",
+      "Back_Body": "white sails",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 47,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Fischereifahrzeug",
+      "Back_Head": "English",
+      "Back_Body": "fishing vessel",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 48,
+      "Front_Head": "Deutsch",
+      "Front_Body": "starke westliche Winde",
+      "Back_Head": "English",
+      "Back_Body": "strong westerly winds",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 49,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Feuer nicht unter Kontrolle",
+      "Back_Head": "English",
+      "Back_Body": "fire not under control",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 50,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Schiff brennt",
+      "Back_Head": "English",
+      "Back_Body": "vessel on fire",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 51,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Ruder gebrochen",
+      "Back_Head": "English",
+      "Back_Body": "rudder broken",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 52,
+      "Front_Head": "Deutsch",
+      "Front_Body": "auf die Sände zu",
+      "Back_Head": "English",
+      "Back_Body": "towards the banks",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 53,
+      "Front_Head": "Deutsch",
+      "Front_Body": "rechtweisende Peilung",
+      "Back_Head": "English",
+      "Back_Body": "true bearing",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 54,
+      "Front_Head": "Deutsch",
+      "Front_Body": "defekte Ruderanlage",
+      "Back_Head": "English",
+      "Back_Body": "defective steering",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 55,
+      "Front_Head": "Deutsch",
+      "Front_Body": "gesichtet",
+      "Back_Head": "English",
+      "Back_Body": "sighted",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 56,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Besatzungsmitglied",
+      "Back_Head": "English",
+      "Back_Body": "crew member",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 57,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Backbord",
+      "Back_Head": "English",
+      "Back_Body": "port side",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 58,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Seenotleitung Bremen",
+      "Back_Head": "English",
+      "Back_Body": "Maritime Rescue Co-ordination Centre Bremen",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 59,
+      "Front_Head": "Deutsch",
+      "Front_Body": "bitte angeben",
+      "Back_Head": "English",
+      "Back_Body": "please indicate",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 60,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Rettungsfloß",
+      "Back_Head": "English",
+      "Back_Body": "life raft",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 61,
+      "Front_Head": "Deutsch",
+      "Front_Body": "gebrochener Mast",
+      "Back_Head": "English",
+      "Back_Body": "broken mast",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 62,
+      "Front_Head": "Deutsch",
+      "Front_Body": "berichten an",
+      "Back_Head": "English",
+      "Back_Body": "to report to",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 63,
+      "Front_Head": "Deutsch",
+      "Front_Body": "für mögliche Hilfeleistung",
+      "Back_Head": "English",
+      "Back_Body": "for possible assistance",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 64,
+      "Front_Head": "Deutsch",
+      "Front_Body": "südlich von",
+      "Back_Head": "English",
+      "Back_Body": "south of",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 65,
+      "Front_Head": "Deutsch",
+      "Front_Body": "später rechtdrehend",
+      "Back_Head": "English",
+      "Back_Body": "veering later",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 66,
+      "Front_Head": "Deutsch",
+      "Front_Body": "gekentert",
+      "Back_Head": "English",
+      "Back_Body": "capsized",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 67,
+      "Front_Head": "Deutsch",
+      "Front_Body": "wegen Maschinenausfall",
+      "Back_Head": "English",
+      "Back_Body": "due to engine trouble",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 68,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Arbeiten",
+      "Back_Head": "English",
+      "Back_Body": "operations",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 69,
+      "Front_Head": "Deutsch",
+      "Front_Body": "um 0600 Ortszeit",
+      "Back_Head": "English",
+      "Back_Body": "at 0600 local time",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 70,
+      "Front_Head": "Deutsch",
+      "Front_Body": "hohe Dünung",
+      "Back_Head": "English",
+      "Back_Body": "high swell",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 71,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Anker verloren",
+      "Back_Head": "English",
+      "Back_Body": "lost anchor",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 72,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Länge 40 Fuß",
+      "Back_Head": "English",
+      "Back_Body": "length 40 feet",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 73,
+      "Front_Head": "Deutsch",
+      "Front_Body": "westliche Ostsee",
+      "Back_Head": "English",
+      "Back_Body": "western baltic (sea)",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 74,
+      "Front_Head": "Deutsch",
+      "Front_Body": "unterwegs",
+      "Back_Head": "English",
+      "Back_Body": "underway",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 75,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Länge 12 m",
+      "Back_Head": "English",
+      "Back_Body": "length 12 m",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 76,
+      "Front_Head": "Deutsch",
+      "Front_Body": "nautische Warnung",
+      "Back_Head": "English",
+      "Back_Body": "navigational warning",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 77,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Schauer",
+      "Back_Head": "English",
+      "Back_Body": "shower",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 78,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Unterwasser-Kabel",
+      "Back_Head": "English",
+      "Back_Body": "underwater cable",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 79,
+      "Front_Head": "Deutsch",
+      "Front_Body": "südlich von Kap Spartivento",
+      "Back_Head": "English",
+      "Back_Body": "south of cape ?Spartivento",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 80,
+      "Front_Head": "Deutsch",
+      "Front_Body": "rote Raketen",
+      "Back_Head": "English",
+      "Back_Body": "red rockets",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 81,
+      "Front_Head": "Deutsch",
+      "Front_Body": "benötigen dringend",
+      "Back_Head": "English",
+      "Back_Body": "require urgent",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 82,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Beschreibung",
+      "Back_Head": "English",
+      "Back_Body": "description",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 83,
+      "Front_Head": "Deutsch",
+      "Front_Body": "treiben in rauer See",
+      "Back_Head": "English",
+      "Back_Body": "drifting in rough sea",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 84,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Geschwindigkeit 13 kn",
+      "Back_Head": "English",
+      "Back_Body": "speed 13 knots",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 85,
+      "Front_Head": "Deutsch",
+      "Front_Body": "?mäßige bis schlechte Sicht",
+      "Back_Head": "English",
+      "Back_Body": "moderate to poor visibility",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 86,
+      "Front_Head": "Deutsch",
+      "Front_Body": "mit der Aufschrift",
+      "Back_Head": "English",
+      "Back_Body": "marked with",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 87,
+      "Front_Head": "Deutsch",
+      "Front_Body": "scharf Ausschau halten",
+      "Back_Head": "English",
+      "Back_Body": "to keep sharp lookout",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 88,
+      "Front_Head": "Deutsch",
+      "Front_Body": "(deutsche) Nachrichten für Seefahrer",
+      "Back_Head": "English",
+      "Back_Body": "German notices to mariners",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 89,
+      "Front_Head": "Deutsch",
+      "Front_Body": "wegen",
+      "Back_Head": "English",
+      "Back_Body": "due to",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 90,
+      "Front_Head": "Deutsch",
+      "Front_Body": "beobachtet, gesichtet",
+      "Back_Head": "English",
+      "Back_Body": "observed",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 91,
+      "Front_Head": "Deutsch",
+      "Front_Body": "wir müssen verlassen",
+      "Back_Head": "English",
+      "Back_Body": "we have to abandon",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 92,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Austausch der",
+      "Back_Head": "English",
+      "Back_Body": "replacement of",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 93,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Wettervorhersage",
+      "Back_Head": "English",
+      "Back_Body": "weather forecast",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 94,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Verdacht auf Herzinfarkt",
+      "Back_Head": "English",
+      "Back_Body": "suspect of heart attack",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 95,
+      "Front_Head": "Deutsch",
+      "Front_Body": "bewusstlos",
+      "Back_Head": "English",
+      "Back_Body": "unconscious",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 96,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Leucht-Heultonne",
+      "Back_Head": "English",
+      "Back_Body": "light and whistle buoy",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 97,
+      "Front_Head": "Deutsch",
+      "Front_Body": "in der Nähe von",
+      "Back_Head": "English",
+      "Back_Body": "in vicinity of",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 98,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Sturmstärke",
+      "Back_Head": "English",
+      "Back_Body": "gale force",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 99,
+      "Front_Head": "Deutsch",
+      "Front_Body": "ansteuern",
+      "Back_Head": "English",
+      "Back_Body": "to approach to",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 100,
+      "Front_Head": "Deutsch",
+      "Front_Body": "rechtweisender Kurs",
+      "Back_Head": "English",
+      "Back_Body": "true course",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 101,
+      "Front_Head": "Deutsch",
+      "Front_Body": "roter Rumpf",
+      "Back_Head": "English",
+      "Back_Body": "red hull",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 102,
+      "Front_Head": "Deutsch",
+      "Front_Body": "US-Küstenwache",
+      "Back_Head": "English",
+      "Back_Body": "US Coast Guard",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 103,
+      "Front_Head": "Deutsch",
+      "Front_Body": "mehr als 2 sm",
+      "Back_Head": "English",
+      "Back_Body": "more than 2 nm",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 104,
+      "Front_Head": "Deutsch",
+      "Front_Body": "gebeten",
+      "Back_Head": "English",
+      "Back_Body": "requested",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 105,
+      "Front_Head": "Deutsch",
+      "Front_Body": "beobachtet auf Position",
+      "Back_Head": "English",
+      "Back_Body": "observed in position",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 106,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Wassereinbruch",
+      "Back_Head": "English",
+      "Back_Body": "flooding",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 107,
+      "Front_Head": "Deutsch",
+      "Front_Body": "S/Y (Segelyacht)",
+      "Back_Head": "English",
+      "Back_Body": "S/Y (Sailing Yacht)",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 108,
+      "Front_Head": "Deutsch",
+      "Front_Body": "mehrere",
+      "Back_Head": "English",
+      "Back_Body": "several",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 109,
+      "Front_Head": "Deutsch",
+      "Front_Body": "verlöscht",
+      "Back_Head": "English",
+      "Back_Body": "unlit",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 110,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Aufbauten",
+      "Back_Head": "English",
+      "Back_Body": "superstructures",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 111,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Abstand halten von",
+      "Back_Head": "English",
+      "Back_Body": "to keep a berth of",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 112,
+      "Front_Head": "Deutsch",
+      "Front_Body": "starke Schlagseite nach",
+      "Back_Head": "English",
+      "Back_Body": "heavy list to",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 113,
+      "Front_Head": "Deutsch",
+      "Front_Body": "werden fortgeführt von",
+      "Back_Head": "English",
+      "Back_Body": "in progress by",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 114,
+      "Front_Head": "Deutsch",
+      "Front_Body": "abnehmend auf",
+      "Back_Head": "English",
+      "Back_Body": "decreasing to",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 115,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Ruderschaden",
+      "Back_Head": "English",
+      "Back_Body": "damaged rudder",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 116,
+      "Front_Head": "Deutsch",
+      "Front_Body": "überfällig seit",
+      "Back_Head": "English",
+      "Back_Body": "overdue since",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 117,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Folgendes empfangen",
+      "Back_Head": "English",
+      "Back_Body": "following received",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 118,
+      "Front_Head": "Deutsch",
+      "Front_Body": "40-Fuß-Container",
+      "Back_Head": "English",
+      "Back_Body": "40-feet containers",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 119,
+      "Front_Head": "Deutsch",
+      "Front_Body": "ist gemeldet",
+      "Back_Head": "English",
+      "Back_Body": "is reported",
+      "Box": 0,
+      "BoxSeq": 0
+    },
+    {
+      "Id": 120,
+      "Front_Head": "Deutsch",
+      "Front_Body": "Kurs und Geschwindigkeit",
+      "Back_Head": "English",
+      "Back_Body": "course and speed",
+      "Box": 0,
+      "BoxSeq": 0
+    }
+  ]

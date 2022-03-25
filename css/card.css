@@ -6,7 +6,7 @@
 }
 
 .my__card {
-    margin: 2rem auto 5rem;
+    margin: 3rem auto 5rem;
     width: 42em;
     height: 25em;
     perspective: 1000px;
@@ -113,6 +113,6 @@
 .card__body--front p,
 .card__body--back p {
     color: var(--card--dark);
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
 }

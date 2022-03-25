@@ -46,9 +46,19 @@ function click_save() {
     webdb_SaveInFile();
 }
 
-function selectNewCard() {    
+function selectNewCard() {
     updateCounts();
-    webdb_ScanBoxForNewCard(5, selectNewCard_Callback);
+
+    var cardinner = $('.card__inner')
+    if (cardinner.hasClass('is-flipped')) {
+        cardinner.removeClass('is-flipped');
+        setTimeout(function () {
+            webdb_ScanBoxForNewCard(5, selectNewCard_Callback);
+        }, (300));
+    }else{
+        webdb_ScanBoxForNewCard(5, selectNewCard_Callback);
+    }
+
 }
 
 async function selectNewCard_Callback(currentBox, count) {
@@ -83,10 +93,10 @@ async function selectNewCard_Callback(currentBox, count) {
             webdb_ScanBoxForNewCard(0, selectNewCard_Callback);
         }
     } else if (currentBox == 0) {
-        if (count > 0){            
+        if (count > 0) {
             webdb_SelectNextCardFromBox(0);
         } else {
-            selectNewCardReverse_Callback(0,0);
+            selectNewCardReverse_Callback(0, 0);
         }
     }
 }
@@ -95,7 +105,7 @@ async function selectNewCardReverse_Callback(currentBox, count) {
     if (currentBox == 0) {
         if (count > 0) {
             webdb_SelectNextCardFromBox(0);
-        } else {            
+        } else {
             webdb_ScanBoxForNewCard(1, selectNewCardReverse_Callback);
         }
     } else if (currentBox == 1) {
@@ -123,7 +133,7 @@ async function selectNewCardReverse_Callback(currentBox, count) {
             webdb_ScanBoxForNewCard(5, selectNewCardReverse_Callback);
         }
     } else if (currentBox == 5) {
-            webdb_SelectNextCardFromBox(5);
+        webdb_SelectNextCardFromBox(5);
     }
 }
 
@@ -149,20 +159,20 @@ function updateCounts() {
     webdb_UpdateBoxCount(5, updateBox5);
 }
 
-function trySetProgress(){
-    if(_progress_0 != null &&
+function trySetProgress() {
+    if (_progress_0 != null &&
         _progress_1 != null &&
         _progress_2 != null &&
         _progress_3 != null &&
         _progress_4 != null &&
-        _progress_5 != null){
-            var sum = (_progress_0+_progress_1+_progress_2+_progress_3+_progress_4+_progress_5)*5;
-            var progress = Math.round((_progress_1 + _progress_2 * 2 + _progress_3*3 + _progress_4*4 + _progress_5*5) * 100 / sum)
-            var progressBar = $('.progress-bar');
-            progressBar.css('width', progress + '%');
-            progressBar.attr('aria-valuenow', progress);
-            progressBar.html(progress + '%')
-        }
+        _progress_5 != null) {
+        var sum = (_progress_0 + _progress_1 + _progress_2 + _progress_3 + _progress_4 + _progress_5) * 5;
+        var progress = Math.round((_progress_1 + _progress_2 * 2 + _progress_3 * 3 + _progress_4 * 4 + _progress_5 * 5) * 100 / sum)
+        var progressBar = $('.progress-bar');
+        progressBar.css('width', progress + '%');
+        progressBar.attr('aria-valuenow', progress);
+        progressBar.html(progress + '%')
+    }
 }
 
 function updateBox0(value) {

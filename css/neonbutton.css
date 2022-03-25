@@ -1,0 +1,90 @@
+:root {
+    --neon-button-correct: rgb(18, 146, 24);
+    --neon-button-wrong: rgb(185, 13, 50);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.neon__button {
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.1), 0 0 0.45em currentColor;
+    position: relative;
+}
+
+.neon__button--correct {
+    color: var(--neon-button-correct);    
+    border: var(--neon-button-correct) .125em solid;
+    box-shadow: inset 0 0 0.5em 0 var(--neon-button-correct), 0 0 0.5em 0 var(--neon-button-correct);
+}
+
+.neon__button--wrong {
+    color: var(--neon-button-wrong);    
+    border: var(--neon-button-wrong) .125em solid;
+    box-shadow: inset 0 0 0.5em 0 var(--neon-button-wrong), 0 0 0.5em 0 var(--neon-button-wrong);
+}
+
+.neon__button::before {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(4em) rotateX(40deg) translateZ(0.8em) scale(0.6, 0.45);
+    filter: blur(2em);
+    opacity: 0.7;
+}
+
+.neon__button:hover::before {
+    opacity: 0.9;
+}
+
+.neon__button--correct::before {
+    background: var(--neon-button-correct);
+}
+
+.neon__button--wrong::before {
+    background: var(--neon-button-wrong);
+}
+
+
+.neon__button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 100ms linear;
+    z-index: -1;
+}
+
+.neon__button--correct::after {
+    box-shadow: 0 0 2em 0.15em var(--neon-button-correct);
+    background-color: var(--neon-button-correct);
+}
+
+.neon__button--wrong::after {
+    box-shadow: 0 0 2em 0.15em var(--neon-button-wrong);
+    background-color: var(--neon-button-wrong);
+}
+
+.neon__button:hover::after {
+    opacity: 0.8;
+}
+
+.neon__button:hover {
+    color: var(--background-primary);
+    text-shadow: none;
+}

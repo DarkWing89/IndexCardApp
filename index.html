@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Card App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/neonbutton.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5 text-center justify-content-md-center">
+            <div class="col col-lg-2 text-start">
+                <div type="button" onclick="click_loadcards()" class="btn btn-outline-secondary">
+                    Karten laden
+                </div>
+            </div>
+            <div class="col col-lg-2">
+                <div type="button" onclick="click_save()" class="btn btn-outline-secondary">
+                    Speichern
+                </div>
+            </div>
+            <div class="col col-lg-2 text-end">
+                <a type="button" href="/createcards.html" class="btn btn-outline-secondary">
+                    Karten erstellen
+                </a>
+            </div>
+        </div>
+
+        <div class="row mt-5 text-center justify-content-md-center">
+            <div class="col col-lg-1">
+                <div class="row text-center">
+                    <div class="col">Neu</div>
+                </div>
+                <div class="row text-center">
+                    <div id="_newcards" class="col">0</div>
+                </div>
+            </div>
+            <div class="col col-lg-1">
+                <div class="row text-center">
+                    <div class="col">Box 1</div>
+                </div>
+                <div class="row text-center">
+                    <div id="_box1" class="col">0</div>
+                </div>
+            </div>
+            <div class="col col-lg-1">
+                <div class="row text-center">
+                    <div class="col">Box 2</div>
+                </div>
+                <div class="row text-center">
+                    <div id="_box2" class="col">0</div>
+                </div>
+            </div>
+            <div class="col col-lg-1">
+                <div class="row text-center">
+                    <div class="col">Box 3</div>
+                </div>
+                <div class="row text-center">
+                    <div id="_box3" class="col">0</div>
+                </div>
+            </div>
+            <div class="col col-lg-1">
+                <div class="row text-center">
+                    <div class="col">Box 4</div>
+                </div>
+                <div class="row text-center">
+                    <div id="_box4" class="col">0</div>
+                </div>
+            </div>
+            <div class="col col-lg-1">
+                <div class="row text-center">
+                    <div class="col">Box 5</div>
+                </div>
+                <div class="row text-center">
+                    <div id="_box5" class="col">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="my__card">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <div class="card__content--front">
+                            <div class="card__header--front">
+                                <h2 id="Question_Headline">Frage</h2>
+                            </div>
+                            <div class="card__body--front">
+                                <h3 id="Front_Head">Lorem ipsum dolor</h3>
+                                <p id="Front_Body" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, molestias non ut
+                                    accusamus ex, rem atque harum illum delectus ipsam nisi obcaecati amet, quam minima
+                                    error nulla! Dolor, nihil laudantium!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content--back">
+                            <div class="card__header--back">
+                                <h2 id="Answer_Headline">Antwort</h2>
+                            </div>
+                            <div class="card__body--back">
+                                <h3 id="Back_Head">Lorem ipsum dolor</h3>
+                                <p id="Back_Body" class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate numquam
+                                    excepturi dolorem, voluptate provident distinctio quam a. Tempora molestiae
+                                    reiciendis explicabo a dolorum voluptatibus iure sed! Labore sapiente repudiandae
+                                    nesciunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center justify-content-md-center">
+            <div class="col col-lg-3">
+                <div onclick="click_correct()" class="neon__button neon__button--correct">Richtig</div>
+            </div>
+            <div class="col col-lg-3">
+                <div onclick="click_wrong()" class="neon__button neon__button--wrong">Falsch</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="/js/utils.js"></script>
+    <script src="/js/webdb.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/card.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

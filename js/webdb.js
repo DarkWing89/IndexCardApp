@@ -55,7 +55,7 @@ async function webdb_ScanBoxForNewCard(number, updateCallback) {
         var sql = 'SELECT Count(*) AS Count FROM Cards WHERE Box=?'
         transaction.executeSql(sql, [number],
             function (tx, results) {
-                selectNewCard_Callback(number, results.rows.item(0).Count);
+                updateCallback(number, results.rows.item(0).Count);
             },
             webdb_OnError);
     });
@@ -65,10 +65,10 @@ async function webdb_ScanBoxForNewCard(number, updateCallback) {
 async function webdb_SelectNextCardFromBox(number) {
     _db.transaction(function (transaction) {
         var sql;
-        if (number > 0) {
-            sql = 'SELECT * FROM Cards WHERE Box=? ORDER BY BoxSeq ASC LIMIT 1'
-        } else {
+        if (number == 0 || number == 5) {
             sql = 'SELECT * FROM Cards WHERE Box=?'
+        } else {
+            sql = 'SELECT * FROM Cards WHERE Box=? ORDER BY BoxSeq ASC LIMIT 1'
         }
         transaction.executeSql(sql, [number],
             function (tx, results) {
@@ -136,18 +136,22 @@ function webdb_CardMovedOutOfBox_Callback(box) {
 }
 
 async function webdb_CardCorrect(card) {
-    _db.transaction(function (transaction) {
-        var sql = 'SELECT BoxSeq FROM Cards WHERE Box=? ORDER BY BoxSeq DESC LIMIT 1'
-        transaction.executeSql(sql, [card.Box + 1],
-            function (tx, results) {
-                var seq = 0;
-                if (results.rows.length > 0) {
-                    seq = results.rows.item(0).BoxSeq + 1;
-                }
-                webdb_CardCorrect_Callback(card, seq);
-            },
-            webdb_OnError);
-    });
+    if (card.Box == 5) {
+        webdb_SelectNextCardFromBox(5);
+    } else {
+        _db.transaction(function (transaction) {
+            var sql = 'SELECT BoxSeq FROM Cards WHERE Box=? ORDER BY BoxSeq DESC LIMIT 1'
+            transaction.executeSql(sql, [card.Box + 1],
+                function (tx, results) {
+                    var seq = 0;
+                    if (results.rows.length > 0) {
+                        seq = results.rows.item(0).BoxSeq + 1;
+                    }
+                    webdb_CardCorrect_Callback(card, seq);
+                },
+                webdb_OnError);
+        });
+    }
 }
 
 function webdb_CardCorrect_Callback(card, newseq) {
@@ -161,13 +165,13 @@ function webdb_CardCorrect_Callback(card, newseq) {
     });
 }
 
-function webdb_SaveInFile(){
+function webdb_SaveInFile() {
     _db.transaction(function (transaction) {
         var sql = 'SELECT * FROM Cards'
         transaction.executeSql(sql, undefined,
             function (tx, results) {
                 var cards = [];
-                for(i=0;i<results.rows.length;i++){
+                for (i = 0; i < results.rows.length; i++) {
                     var c = results.rows.item(i);
                     cards.push(new Card(c.Id, c.Front_Head, c.Front_Body, c.Back_Head, c.Back_Body, c.Box, c.BoxSeq));
                 }
@@ -176,15 +180,13 @@ function webdb_SaveInFile(){
             },
             webdb_OnError);
     });
-
-    
 }
 
-async function webdb_SaveInFileCallback(jsonstring){
+async function webdb_SaveInFileCallback(jsonstring) {
     const opts = {
-        types:[{
+        types: [{
             description: 'Json File',
-            accept: {'application/json': ['.json']}
+            accept: { 'application/json': ['.json'] }
         }],
         excludeAcceptAllOption: true,
         multiple: false

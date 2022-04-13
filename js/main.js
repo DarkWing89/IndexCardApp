@@ -1,4 +1,5 @@
 const _card = document.querySelector('.card__inner');
+const _notetoggle = document.querySelector('#note_checkbox');
 var _html_newCards = document.getElementById('_newcards');
 var _html_box1 = document.getElementById('_box1');
 var _html_box2 = document.getElementById('_box2');
@@ -10,6 +11,28 @@ var _currentCard;
 
 _card.addEventListener('click', function () {
     _card.classList.toggle('is-flipped');
+})
+
+_notetoggle.addEventListener('change', function(){
+    var colcard = $('#col_card');
+    var colnote = $('#col_note');
+    var card = $('.my__card ');
+    var note = $('.note__card ');
+    if(this.checked){
+        // Notizen einblenden
+        colcard.addClass('col-lg-6');
+        colcard.removeClass('col-lg-12');
+        colnote.removeAttr('hidden');
+        card.css('margin', '3rem 3rem 5rem auto');
+        note.css('margin', '3rem auto 5rem 3rem');
+        clear_notes();
+    }else{    
+        colcard.removeClass('col-lg-6');
+        colcard.addClass('col-lg-12');
+        colnote.attr('hidden', true);
+        card.css('margin', '3rem auto 5rem');
+        note.css('margin', '3rem auto 5rem');
+    }
 })
 
 $(document).ready(function(){
@@ -38,6 +61,10 @@ async function click_loadcards() {
     }
 }
 
+function clear_notes() {
+    $('#note_text').val('')
+}
+
 function click_correct() {
     webdb_CardCorrect(_currentCard);
 }
@@ -52,6 +79,7 @@ function click_save() {
 
 function selectNewCard() {
     updateCounts();
+    clear_notes();
 
     var cardinner = $('.card__inner')
     if (cardinner.hasClass('is-flipped')) {

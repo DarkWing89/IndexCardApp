@@ -9,13 +9,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/notecard.css" />
     <link rel="stylesheet" href="css/neonbutton.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
     <div class="container">
-        <div class="row mt-5 text-center justify-content-md-center">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-auto">Einstellungen:</div>
+            <div class="col-lg-auto">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="note_checkbox">
+                    <label class="form-check-label" for="note_checkbox">
+                    Notizen
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 text-center justify-content-md-center">
             <div class="col col-lg-2 text-start">
                 <div type="button" onclick="click_loadcards()" class="btn btn-outline-secondary">
                     Karten laden
@@ -94,41 +106,58 @@
         </div>
 
         <div class="row">
-            <div class="my__card">
-                <div class="card__inner">
-                    <div class="card__face card__face--front">
-                        <div class="card__content--front">
-                            <div class="card__header--front">
-                                <h2 id="Question_Headline">Frage</h2>
-                            </div>
-                            <div class="card__body--front">
-                                <h3 id="Front_Head">Lorem ipsum dolor</h3>
-                                <p id="Front_Body" class="text-center">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Sunt, molestias non ut
-                                    accusamus ex, rem atque harum illum delectus ipsam nisi obcaecati amet, quam minima
-                                    error nulla! Dolor, nihil laudantium!</p>
+            <div id="col_card" class="col col-lg-12">
+                <div class="my__card">
+                    <div class="card__inner">
+                        <div class="card__face card__face--front">
+                            <div class="card__content--front">
+                                <div class="card__header--front">
+                                    <h2 id="Question_Headline">Frage</h2>
+                                </div>
+                                <div class="card__body--front">
+                                    <h3 id="Front_Head">Lorem ipsum dolor</h3>
+                                    <p id="Front_Body" class="text-center">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Sunt, molestias non ut
+                                        accusamus ex, rem atque harum illum delectus ipsam nisi obcaecati amet, quam minima
+                                        error nulla! Dolor, nihil laudantium!</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content--back">
-                            <div class="card__header--back">
-                                <h2 id="Answer_Headline">Antwort</h2>
-                            </div>
-                            <div class="card__body--back">
-                                <h3 id="Back_Head">Lorem ipsum dolor</h3>
-                                <p id="Back_Body" class="text-center">Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing elit. Cupiditate numquam
-                                    excepturi dolorem, voluptate provident distinctio quam a. Tempora molestiae
-                                    reiciendis explicabo a dolorum voluptatibus iure sed! Labore sapiente repudiandae
-                                    nesciunt.</p>
+                        <div class="card__face card__face--back">
+                            <div class="card__content--back">
+                                <div class="card__header--back">
+                                    <h2 id="Answer_Headline">Antwort</h2>
+                                </div>
+                                <div class="card__body--back">
+                                    <h3 id="Back_Head">Lorem ipsum dolor</h3>
+                                    <p id="Back_Body" class="text-center">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Cupiditate numquam
+                                        excepturi dolorem, voluptate provident distinctio quam a. Tempora molestiae
+                                        reiciendis explicabo a dolorum voluptatibus iure sed! Labore sapiente repudiandae
+                                        nesciunt.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div id="col_note" class="col col-lg-6" hidden>
+                
+                <div class="note__card">
+                    <div class="notecard__inner">
+                        <div class="notecard__face">
+                                <div class="notecard__body">
+                                    <h3>Notizen:</h3>
+                                    <div class="notecard__textarea--wrapper">
+                                        <textarea id="note_text" class="form-control"></textarea> 	
+                                    </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
 
+            </div>
+        </div>
         <div class="row text-center justify-content-md-center">
             <div class="col col-lg-3">
                 <div onclick="click_correct()" class="neon__button neon__button--correct">Richtig</div>
@@ -137,8 +166,8 @@
                 <div onclick="click_wrong()" class="neon__button neon__button--wrong">Falsch</div>
             </div>
         </div>
-
     </div>
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/webdb.js"></script>

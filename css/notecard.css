@@ -1,0 +1,77 @@
+:root {
+    --input-area-shadow:#ffce00;
+    --notecard--primary: #494949;
+    --notecard--secondary: #eeeeee;
+    --notecard--dark: #212121;
+    --notecard--light: #d4d4d4;
+}
+
+.note__card {
+    margin: 3rem auto 5rem;
+    width: 42em;
+    height: 25em;
+    perspective: 1000px;
+}
+
+/*  CARD__INNER */
+
+.notecard__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.notecard__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16;
+    box-shadow: 0px 3px 18px 3px rgba(255, 255, 255, 0.2);
+    background-color: var(--notecard--light);
+    z-index: -2;
+}
+
+
+/*  CARD__BODY */
+
+.notecard__body {
+    padding: 30px;
+    height: 100%;
+}
+
+.notecard__textarea--wrapper{
+    color: var(--notecard--dark);
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    height: 100%;
+    padding-bottom: 70px;
+}
+
+.notecard__textarea--wrapper textarea {
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--notecard--light);
+    border-color: var(--notecard--dark);
+}
+
+.notecard__textarea--wrapper textarea:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(50, 50, 50, 0.6);
+    background-color: var(--notecard--light);
+    border-color: var(--notecard--dark);
+
+}
+
+.notecard__body h3 {
+    color: var(--notecard--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
